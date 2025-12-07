@@ -1,0 +1,10 @@
+a = int(input("Enter a number A: "))
+b = int(input("Enter a number B: "))
+
+print(f'{a} + {b} = {a + b}')
+print(f'{a} - {b} = {a - b}')
+print(f'{a} * {b} = {a * b}')
+print(f'{a} / {b} = {a / b}')
+print(f'{a} % {b} = {a % b}')
+print(f'{a} ** {b} = {a ** b}')
+print(f'{a} // {b} = {a // b}')
