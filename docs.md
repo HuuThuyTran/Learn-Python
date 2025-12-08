@@ -2,12 +2,12 @@
 -> Sử dụng: input(), output()
 
 ### Bài 2: biến, hàng s
-- có thế gán giá trị cho nhiều biến có giá trị khác nhau hay có giá trị giống nhau
--  Vd: x, y, z = 1, 2, 3
--  Vd: x = y = z = "Xin chào"
-- ===================
-- Hằng số là biến ko thể thay đổi giá trị và tên biến phải viết hoa
-- - Vd: PI = 3.14, MAX = 100, ....
+-     có thế gán giá trị cho nhiều biến có giá trị khác nhau hay có giá trị giống nhau
+-     Vd: x, y, z = 1, 2, 3
+-     Vd: x = y = z = "Xin chào"
+-     ===================
+-     Hằng số là biến ko thể thay đổi giá trị và tên biến phải viết hoa
+-     Vd: PI = 3.14, MAX = 100, ....
 
 ### Bài 3: kiểu dũ liệu
 - Python là một ngôn ngữ theo kiểu thông dịch (là ko cần biên dịch), là tự động hiểu, đoán đc kiểu dữ liệu
@@ -39,3 +39,10 @@
 -     Toán tử đặc biệt: is và is not
 -     is: kiểm tra xem hai biến có tham chiếu đến cùng một đối tượng trong bộ nhớ không.
 -     is not: kiểm tra xem hai biến có trỏ đến các đối tượng khác nhau trong bộ nhớ không.
+
+### Bài 9: Toán tử 3 ngôi
+-     Cú pháp: gia_tri_khi_dung if dieu_kien else gia_tri_khi_sai
+-     Vd: tuoi = "truong thanh" if tuoi > 18 else "chua truong thanh"
+
+### Bài 10: Câu lệnh rẽ nhánh
+-     Sử dụng từ khóa: if...elif...else

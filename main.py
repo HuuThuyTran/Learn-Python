@@ -1,30 +1,20 @@
-a = int(input("Enter a number A: "))
-b = int(input("Enter a number B: "))
+print("==== Su dung toan tu 3 ngoi ====")
+n = int(input("Enter a number n: "))
+number = "even" if (n % 2) == 0 else "odd"
+print(f'Number: {number}')
 
-print("====== Ví dụ về toán tử số học ======")
-print(f'{a} + {b} = {a + b}')
-print(f'{a} - {b} = {a - b}')
-print(f'{a} * {b} = {a * b}')
-print(f'{a} / {b} = {a / b}')
-print(f'{a} % {b} = {a % b}')
-print(f'{a} ** {b} = {a ** b}')
-print(f'{a} // {b} = {a // b}')
+print("==== Cau lenh re nhanh ====")
+x = float(input("Enter a number x: "))
+if (x % 2) == 0:
+    print(x, "is positive integers")
+else:
+    print(x, "is negative integers")
 
-print("====== Ví dụ về toán tử so sánh ======")
-print(f'{a} > {b}: {a > b}')
-print(f'{a} < {b}: {a < b}')
-print(f'{a} >= {b}: {a >= b}')
-print(f'{a} <= {b}: {a <= b}')
-print(f'{a} != {b}: {a != b}')
-print(f'{a} == {b}: {a == b}')
-
-print("====== Ví dụ về toán tử logic ======")
-print(f'{(a > b) and (a < b)}')
-print(f'{(a > b) or (a < b)}')
-print(f'{not (a > b)}')
-
-print("====== Ví dụ về toán tử is và is not ======")
-
-x = 1000
-y = 1000
-print(x is not y)
+if x >= 9:
+    print("Rank: A")
+elif x >= 8:
+    print("Rank: B")
+elif x >= 6.0 or x >= 7.0:
+    print("Rank: C")
+else:
+    print("Rank: D")
