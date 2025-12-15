@@ -122,7 +122,7 @@ print(f'Danh sách sau khi đảo ngươc: {students}')
 # Nếu lả kiểu number: nó có thể sắp xếp tăng dần, giảm dần
 
 print("VII. Sắp xếp phần tử")
-students.reverse()
+students.sort()
 print(f'Danh sách sinh vien khi sắp xếp: {students}')
 
 # Tạo danh sách numbers
