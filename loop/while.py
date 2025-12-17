@@ -2,17 +2,16 @@
 # While(condition): dùng để lặp mà KHÔNG BIẾT SỐ LẦN LẶP
 
 # Bài tập: Tính tổng từ 1 đền n
-# n = int(input("Enter a number: "))
-# value = 1
-# sum = 0
-#
-# while value <= n:
-#     sum += value  # sum = sum + value
-#     value += 1    # value = value + 1
-# print(f'Sum = {sum}')
+n = int(input("Enter a number: "))
+value = 1
+sum = 0
+
+while value <= n:
+    sum += value  # sum = sum + value
+    value += 1    # value = value + 1
+print(f'Sum = {sum}')
 
 # Bài tập: Chuyển đổi số thập phân sang nhị phân
-
 # B1: Cho người dùng: nhập số x > 0, nhập sai bắt nhập lại
 x = -1
 while x <= 0:
