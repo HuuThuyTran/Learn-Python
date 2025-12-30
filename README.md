@@ -1,4 +1,5 @@
-# 🐍 Learn-Python
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
+# Learn-Python
 
 ## 📌 Giới thiệu
 Đây là repository chứa mã nguồn **Python**, phục vụ cho việc học tập và thực hành các kiến thức cơ bản đến nâng cao của Python như:
