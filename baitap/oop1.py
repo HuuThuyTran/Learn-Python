@@ -93,30 +93,34 @@ def inDSMH():
 
 # Hàm thêm môn học
 def themMH():
-    global soTC
     print('Nhập các thông tin môn học cần thêm')
-    maMH = input('Nhập mã môn học: ')
-    tenMH = input('Nhập tên môn học: ').strip()
 
     # Kiểm tra trùng mã môn học
-    for monHoc in danhSachMonHoc:
-        if monHoc.maMH == maMH:
+    while True:
+        maMH = input('Nhập mã môn học: ')
+        if any(mh.maMH == maMH for mh in danhSachMonHoc):
             print('Mã môn học bị trùng!')
-            return
+            continue
+        else:
+            break
+
+    tenMH = input('Nhập tên môn học: ')
 
     # Kiểm tra nhập số tín chỉ hợp lệ
-    try:
-        soTC = int(input('Nhập số tín chỉ: '))
-        if soTC <= 0:
-            print('Số tín chỉ phải > 0!')
-            return
-    except ValueError:
-        print('Số tín chỉ phải là số nguyên. Vui lòng nhập lại!')
+    while True:
+        try:
+            soTC = int(input('Nhập số tín chỉ: '))
+            if soTC <= 0:
+                print('Số tín chỉ phải > 0!')
+                continue
+            break
+        except ValueError:
+            print('Số tín chỉ phải là số nguyên. Vui lòng nhập lại!')
 
     # Thêm môn học vào danh sách
     monHoc = MonHoc(maMH, tenMH, soTC)
     danhSachMonHoc.append(monHoc)
-    print('Đã thêm thành công!')
+    print('Đã thêm một môn học thành công!')
 
 # Hàm xóa môn học theo mã môn
 def xoaMHTheoMa(maXoa):
